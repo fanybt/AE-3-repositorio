@@ -14,7 +14,7 @@
                 <p class="telefono">Teléfono: <xsl:value-of select="/ite/telefono"/></p>
                 
                 <!-- TABLA CON PROFESORES -->
-                <table>
+                <table class="izquierda">
                     <caption><h4>Profesorado</h4></caption>
                     <thead>
                         <tr>
@@ -45,19 +45,21 @@
                 </table>
 
                 <!-- LISTA DESORDENADA -->
-                <h4>Directora</h4>
-                <ul>
-                    <li>NOMBRE: <xsl:value-of select="/ite/director/nombre"/></li>
-                    <li>DESPACHO: <xsl:value-of select="/ite/director/despacho"/></li>
-                </ul>
-                <h4>Jefe de estudios</h4>
-                <ul>
-                    <li>NOMBRE: <xsl:value-of select="/ite/jefe_estudios/nombre"/></li>
-                    <li>DESPACHO: <xsl:value-of select="/ite/jefe_estudios/despacho"/></li>
-                </ul>
+                <div class="derecha">
+                    <h4>Directora</h4>
+                    <ul>
+                        <li>NOMBRE: <xsl:value-of select="/ite/director/nombre"/></li>
+                        <li>DESPACHO: <xsl:value-of select="/ite/director/despacho"/></li>
+                    </ul>
+                    <h4>Jefe de estudios</h4>
+                    <ul>
+                        <li>NOMBRE: <xsl:value-of select="/ite/jefe_estudios/nombre"/></li>
+                        <li>DESPACHO: <xsl:value-of select="/ite/jefe_estudios/despacho"/></li>
+                    </ul>
+                </div>
                 
                 <!-- TABLA CON CICLOS -->
-                <table>
+                <table class="ciclos">
                     <caption><h4>Ciclos</h4></caption>
                     <xsl:for-each select="ite/ciclos">
                         <thead>

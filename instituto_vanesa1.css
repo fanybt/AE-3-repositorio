@@ -44,7 +44,23 @@ tbody tr td{
     border: 1px solid black;
     padding: 5px;
 }
-
+table.izquierda{
+    float: left;
+    margin-left: 15%;
+}
+.derecha{
+    float: right;
+    margin-right: 15%;
+    background-color: antiquewhite;
+    padding: 0px 20px;
+    height: 250px;
+}
+ul li{
+    list-style: none;
+}
+table.ciclos{
+    clear: both;
+}
 #datos input{
 	font-size: 16px;
 	width: 200px;
