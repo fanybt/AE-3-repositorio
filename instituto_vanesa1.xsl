@@ -129,7 +129,7 @@
                         <hr/>
 
                         <label class="margenform" for="observaciones">Observaciones:</label><br/>
-                        <textarea name="observaciones"></textarea><br/>
+                        <textarea name="observaciones" placeholder="¿Algo más que añadir?"></textarea><br/>
 
                         <input class="boton" type="submit" value="Enviar datos"></input>
                         <input class="boton" type="reset" value="Limpiar formulario"></input>
