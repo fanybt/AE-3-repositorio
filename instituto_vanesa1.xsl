@@ -94,7 +94,7 @@
                 </table>
 
                 <!-- FORMULARIO -->
-                <h4>FORMULARIO</h4>
+                <h4 id="formulario">FORMULARIO</h4>
                 <form action="procesarPeticion.jsp" method="get">
                     <fieldset>
                         <div id="datos">
@@ -114,21 +114,25 @@
                         <hr/>
                         
                         <label for="estudios_finalizados">Estudios finalizados: </label><br/>
-                        <input type="radio" name="estudios_finalizados" value="B" />Bachillerato<br />
-                        <input type="radio" name="estudios_finalizados" value="L" />Licenciatura<br />
-                        <input type="radio" name="estudios_finalizados" value="D" />Diplomatura<br />
-                        <input type="radio" name="estudios_finalizados" value="C" />Ciclo<br />
+                        <input class="margenform" type="radio" name="estudios_finalizados" value="B" />Bachillerato<br />
+                        <input class="margenform" type="radio" name="estudios_finalizados" value="L" />Licenciatura<br />
+                        <input class="margenform" type="radio" name="estudios_finalizados" value="D" />Diplomatura<br />
+                        <input class="margenform" type="radio" name="estudios_finalizados" value="C" />Ciclo<br />
+
+                        <hr/>
 
                         <label for="grado">¿Qué grado te interesa?</label><br/>
-                        <input type="checkbox" name="grado" value="asir" />Administración de Sistemas Informáticos en Red<br/>
-                        <input type="checkbox" name="grado" value="daw" />Desarrollo de Aplicaciones Web<br/>
-                        <input type="checkbox" name="grado" value="dam" />Desarrollo de Aplicaciones Multiplataforma<br/>
+                        <input class="margenform" type="checkbox" name="grado" value="asir" />Administración de Sistemas Informáticos en Red<br/>
+                        <input class="margenform" type="checkbox" name="grado" value="daw" />Desarrollo de Aplicaciones Web<br/>
+                        <input class="margenform" type="checkbox" name="grado" value="dam" />Desarrollo de Aplicaciones Multiplataforma<br/>
                         
-                        <label for="observaciones">Observaciones:</label><br/>
+                        <hr/>
+
+                        <label class="margenform" for="observaciones">Observaciones:</label><br/>
                         <textarea name="observaciones"></textarea><br/>
 
-                        <input type="submit" value="Enviar datos"></input>
-                        <input type="reset" value="Limpiar formulario"></input>
+                        <input class="boton" type="submit" value="Enviar datos"></input>
+                        <input class="boton" type="reset" value="Limpiar formulario"></input>
                     </fieldset>
                 </form>
             </body>
