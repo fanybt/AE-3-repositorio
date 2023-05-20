@@ -71,7 +71,7 @@
                     <ciclo_formativo>
 
                         <Abreviatura_nombre>
-                            <xsl:value-of select="@id"/> :
+                            <xsl:value-of select="@id"/>_
                             <xsl:value-of select="nombre"/>
                         </Abreviatura_nombre>
 
