@@ -19,7 +19,7 @@
 
 
 
-                <h3>Información de interés:</h3>
+                <h2>Información de interés:</h2>
 
                 <ul>
                     <li>
@@ -27,13 +27,15 @@
                     </li>
 
                     <li>
-                    Empresa del instituto: <xsl:value-of select="ite/empresa"/>
+                    Empresa del instituto: <a href="https://www.grupoproeduca.com/">Proeduca</a>
+                    
                     </li>
-
+                    
                     <li>
                     Telefono de contacto: <xsl:value-of select="ite/telefono"/>
                     </li>
                 </ul>
+
 
                 <table>
 
@@ -110,7 +112,7 @@
                             <xsl:value-of select="grado"/>
                         </td>
                         <td>
-                            <xsl:value-of select="decretoTitulo"/>
+                            <xsl:value-of select="decretoTitulo/@año"/>
                         </td>
                     </tr>
 
