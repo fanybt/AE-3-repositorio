@@ -79,7 +79,7 @@
                             <xsl:value-of select="grado"/>
                         </Grado>
                         <Año_Decreto>
-                            <xsl:value-of select="decretoTitulo"/>
+                            <xsl:value-of select="decretoTitulo/@año"/>
                         </Año_Decreto>
                     </ciclo_formativo>
                 </xsl:for-each>
