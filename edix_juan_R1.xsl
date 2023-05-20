@@ -96,49 +96,82 @@
             </thead>
 
             <tbody>
-            
-            <xsl:for-each select="ite/ciclos/ciclo">
-            
-            <tr>
-            <td><xsl:value-of select="@id"/></td>
-            <td><xsl:value-of select="nombre"/></td>
-            <td><xsl:value-of select="grado"/></td>
-            <td><xsl:value-of select="decretoTitulo"/></td>
-            </tr>
-            
-            </xsl:for-each>
+
+                <xsl:for-each select="ite/ciclos/ciclo">
+
+                    <tr>
+                        <td>
+                            <xsl:value-of select="@id"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="nombre"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="grado"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="decretoTitulo"/>
+                        </td>
+                    </tr>
+
+                </xsl:for-each>
             </tbody>
         </table>
-           
-            
+
+
+        <h4 id="formulario">FORMULARIO</h4>
+        <form action="procesarPeticion.jsp" method="get">
+            <fieldset>
+
+                <legend>Datos de inscripción:</legend>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre" />
+                <br/>
+
+                <label for="apellidos">Apellidos: </label>
+                <input id="apellidos" type="text" name="apellidos" placeholder="Escriba sus apellidos"/>
+                <br/>
+
+                <label for="edad">Edad: </label>
+                <input id="edad" type="number" min="0" max="120" step="1" name="edad" />
+                <br/>
+
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Email de contacto:" />
+                <br/>
+
+                <label for="telefono">Teléfono: </label>
+                <input id="telefono" type="tel" name="telefono" placeholder="Escriba su teléfono"></input>
 
 
 
+                <br/>
+                <br/>
 
+                <label for="grado">Grado al que te gustaria apuntarte:</label>
+                <br/>
+                <input type="checkbox" name="grado" value="asir" />
+                <xsl:value-of select="ite/ciclos/ciclo[1]/nombre"/>
+                <br/>
+                <input type="checkbox" name="grado" value="daw" />
+                <xsl:value-of select="ite/ciclos/ciclo[2]/nombre"/>
+                <br/>
+                <input type="checkbox" name="grado" value="dam" />
+                <xsl:value-of select="ite/ciclos/ciclo[3]/nombre"/>
+                <br/>
 
+                <hr/>
 
+                <label for="observaciones">Información Adicional:</label>
+                <br/>
+                <textarea style="resize: none;" rows="8" cols="120" name="observaciones" placeholder="Escriba aquí cualquier información relevante"></textarea>
+                <br/>
 
+                <input type="submit" value="Enviar datos"></input>
+                <input type="reset" value="Limpiar formulario"></input>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </fieldset>
+        </form>
 
     </body>
 
@@ -147,3 +180,8 @@
 </xsl:template>
 
 </xsl:stylesheet>
+                       
+
+                        
+
+            
