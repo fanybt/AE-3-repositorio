@@ -1,2 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<instituto_edix>
+    <nombre>Instituto Tecnológico Edix</nombre>
+    <web_instituto>https://institutotecnologico.edix.com</web_instituto>
+    <empresa>
+        <nombre>Proeduca</nombre>
+        <telefono>+34 91 787 39 91</telefono>
+    </empresa>
+    <profesores>
+        <profesor id="1">
+            <nombre>Félix</nombre>
+        </profesor>
+        <profesor id="2">
+            <nombre>Raúl</nombre>
+        </profesor>
+        <profesor id="3">
+            <nombre>Raquel</nombre>
+        </profesor>
+        <profesor id="4">
+            <nombre>Tomás</nombre>
+        </profesor>
+    </profesores>
+    <directora Despacho="Numero 31, 3ª Planta, Edificio A">
+        <nombre>Chon</nombre>
+    </directora>
+    <jefe_estudios Despacho="Numero 27, 2ª Planta, Edificio B">
+        <nombre>Dani</nombre>
+    </jefe_estudios>
+    <estudios_oficiales>
+        <ciclo_formativo>
+            <Abreviatura_nombre>ASIR_Administración de Sistemas Informáticos en Red</Abreviatura_nombre>
+            <Grado>Superior</Grado>
+            <Año_Decreto/>
+        </ciclo_formativo>
+        <ciclo_formativo>
+            <Abreviatura_nombre>DAW_Desarrollo de Aplicaciones Web</Abreviatura_nombre>
+            <Grado>Superior</Grado>
+            <Año_Decreto/>
+        </ciclo_formativo>
+        <ciclo_formativo>
+            <Abreviatura_nombre>DAM_Desarrollo de Aplicaciones Multiplataforma</Abreviatura_nombre>
+            <Grado>Superior</Grado>
+            <Año_Decreto/>
+        </ciclo_formativo>
+    </estudios_oficiales>
+</instituto_edix>
