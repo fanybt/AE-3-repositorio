@@ -50,7 +50,7 @@
                             </xsl:attribute>
                             <nombre><xsl:value-of select="ciclo[1]/nombre"/></nombre>
                             <tipo_grado><xsl:value-of select="ciclo[1]/grado"/></tipo_grado>
-                            <año><xsl:value-of select="ciclo[1]/decretoTitulo"/></año>
+                            <año><xsl:value-of select="ciclo[1]/decretoTitulo/@año"/></año>
                         </ciclo_formativo>
                         <ciclo_formativo>
                             <xsl:attribute name="identificador">
@@ -58,7 +58,7 @@
                             </xsl:attribute>
                             <nombre><xsl:value-of select="ciclo[2]/nombre"/></nombre>
                             <tipo_grado><xsl:value-of select="ciclo[2]/grado"/></tipo_grado>
-                            <año><xsl:value-of select="ciclo[2]/decretoTitulo"/></año>
+                            <año><xsl:value-of select="ciclo[2]/decretoTitulo/@año"/></año>
                         </ciclo_formativo>
                         <ciclo_formativo>
                             <xsl:attribute name="identificador">
@@ -66,7 +66,7 @@
                             </xsl:attribute>
                             <nombre><xsl:value-of select="ciclo[3]/nombre"/></nombre>
                             <tipo_grado><xsl:value-of select="ciclo[3]/grado"/></tipo_grado>
-                            <año><xsl:value-of select="ciclo[3]/decretoTitulo"/></año>
+                            <año><xsl:value-of select="ciclo[3]/decretoTitulo/@año"/></año>
                         </ciclo_formativo>
                     </xsl:for-each>
                 </estudios>
