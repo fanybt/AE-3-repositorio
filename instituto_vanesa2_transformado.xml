@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<!DOCTYPE instituto>
 <instituto>
 	<nombre web="https://institutotecnologico.edix.com">Instituto Tecnológico Edix</nombre>
 	<empresa>
@@ -26,19 +25,19 @@
 		</jefe_estudios>
 		<estudios>
 			<ciclo_formativo identificador="ASIR">
-				<nombre>Administraciónn de Sistemas Informáticos en Red</nombre>
+				<nombre>Administración de Sistemas Informáticos en Red</nombre>
 				<tipo_grado>Superior</tipo_grado>
-				<año/>
+				<año>2009</año>
 			</ciclo_formativo>
 			<ciclo_formativo identificador="DAW">
 				<nombre>Desarrollo de Aplicaciones Web</nombre>
 				<tipo_grado>Superior</tipo_grado>
-				<año/>
+				<año>2010</año>
 			</ciclo_formativo>
 			<ciclo_formativo identificador="DAM">
 				<nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
 				<tipo_grado>Superior</tipo_grado>
-				<año/>
+				<año>2010</año>
 			</ciclo_formativo>
 		</estudios>
 	</empresa>
