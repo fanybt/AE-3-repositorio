@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nuevo_ite">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="informacion_general">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="web" type="xs:string" />
+                            <xs:element name="empresa" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                        <xs:element name="id" minOccurs="0" type="xs:string" />
+                                        <xs:element name="nombre" minOccurs="0" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

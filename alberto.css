@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #formularioContacto label, #formularioContacto input, #formularioContacto textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  #formularioContacto textarea {
+    height: 100px;
+  }
+  
+  #formularioContacto input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #formularioContacto input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  #nombre,
+  #web,
+  #empresa,
+  #telefono,
+  #directorNombre,
+  #directorDespacho,
+  #jefeEstudiosNombre,
+  #jefeEstudiosDespacho {
+    font-weight: bold;
+  }
+  
+  #profesoresTable {
+    width: 100%;
+  }
+  
+  #profesoresTable th:first-child,
+  #profesoresTable td:first-child {
+    width: 30%;
+  }
+  
+  #profesoresTable th:last-child,
+  #profesoresTable td:last-child {
+    width: 70%;
+  }
+  
+  #profesoresTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #profesoresTable tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #ciclosList {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #director,
+  #jefeEstudios {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #director p,
+  #jefeEstudios p {
+    margin: 0;
+  }
+  
+  #director p:first-child,
+  #jefeEstudios p:first-child {
+    margin-bottom: 10px;
+  }
+  

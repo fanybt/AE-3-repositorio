@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Información del Instituto</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+  <h1>Información del Instituto</h1>
+
+  <h2>Información General</h2>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <td><span id="nombre"></span></td>
+    </tr>
+    <tr>
+      <th>Web</th>
+      <td><a href="#" id="web"></a></td>
+    </tr>
+    <tr>
+      <th>Empresa</th>
+      <td><span id="empresa"></span></td>
+    </tr>
+    <tr>
+      <th>Teléfono</th>
+      <td><span id="telefono"></span></td>
+    </tr>
+  </table>
+
+  <h2>Profesores</h2>
+  <table id="profesoresTable">
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+    </tr>
+  </table>
+
+  <h2>Director</h2>
+  <div id="director">
+    <p><strong>Nombre:</strong> <span id="directorNombre"></span></p>
+    <p><strong>Despacho:</strong> <span id="directorDespacho"></span></p>
+  </div>
+
+  <h2>Jefe de Estudios</h2>
+  <div id="jefeEstudios">
+    <p><strong>Nombre:</strong> <span id="jefeEstudiosNombre"></span></p>
+    <p><strong>Despacho:</strong> <span id="jefeEstudiosDespacho"></span></p>
+  </div>
+
+  <h2>Ciclos</h2>
+  <ul id="ciclosList"></ul>
+
+  <h2>Formulario de Contacto</h2>
+  <form id="formularioContacto">
+    <label for="nombreContacto">Nombre:</label>
+    <input type="text" id="nombreContacto" name="nombreContacto" required>
+
+    <label for="emailContacto">Email:</label>
+    <input type="email" id="emailContacto" name="emailContacto" required>
+
+    <label for="mensajeContacto">Mensaje:</label>
+    <textarea id="mensajeContacto" name="mensajeContacto" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
